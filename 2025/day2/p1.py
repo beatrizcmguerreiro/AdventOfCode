@@ -11,7 +11,7 @@ with open("2025/day2/input.txt", "r") as file:
         last_id = int(last_str)
         ranges.append([first_id, last_id]) # append the pair of IDs as a list
 
-
+print(ranges)
 def is_invalid(product_id): # check if the ID is repeated twice
     s = str(product_id) #convert ID to string since it's easier to compare "halves"
     length = len(s) # get length of the string because we need to know where to cut it
